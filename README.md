@@ -14,22 +14,22 @@ typing_speed = 0.05  # Adjust this value to control the typing speed
 
 def type_fast_game():
     count = 0 #default count = 3 change if you hashtag out user options
-    lives = user_lives #default lives 3 change if you hashtag out user options
+    lives = 3 #default lives 3 change if you hashtag out user options (user_lives)
     while True:
-        time_limit = user_timelimit #default limit is 5 change if you hashtag out user options
+        time_limit = 5 #default limit is 5 change if you hashtag out user option (user_timelimit)
         start_time = time.time()
       
         # Game loop
         running = True
         while True:
-            time_limit = user_timelimit #default limit is 5 change if you hashtag out user options
+            time_limit = 5 #default limit is 5 change if you hashtag out user options (user_timelimit)
             start_time = time.time()
             running = True
             
             if lives == 0:
                 print("YOU LOSE!")
                 exit()
-            if count == user_count: #default count = 3 change if you hashtag out user options
+            if count == 3: #default count = 3 change if you hashtag out user options (user_count)
                 print("YOU WIN!")
                 exit()
 
@@ -94,9 +94,9 @@ print("")
 print("Topics - Hacker(Hard), Coder(Medium), Computing(Easy)")
 
 topic_choice = input("Choose a topic to play: ")
-user_lives = int(input("How many lives do you want: "))
-user_count = int(input("Whats the word limit: "))
-user_timelimit = int(input("Whats your time limit: "))
+#user_lives = int(input("How many lives do you want: "))
+#user_count = int(input("Whats the word limit: "))
+#user_timelimit = int(input("Whats your time limit: "))
 user_ready = input("Are you ready (y/n): ")
 
 if user_ready == "y":
@@ -115,9 +115,3 @@ print("1")
 time.sleep(1)
 print("Go!")
 type_fast_game()
-
-
-
-
-
-
